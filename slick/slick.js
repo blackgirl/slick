@@ -1852,8 +1852,8 @@
 
         var xDist, yDist, r, swipeAngle, _ = this;
 
-        xDist = _.touchObject.startX - _.touchObject.curX;
-        yDist = _.touchObject.startY - _.touchObject.curY;
+        xDist = _.touchObject.startY - _.touchObject.curY;
+        yDist = _.touchObject.startX - _.touchObject.curX;
         r = Math.atan2(yDist, xDist);
 
         swipeAngle = Math.round(r * 180 / Math.PI);
